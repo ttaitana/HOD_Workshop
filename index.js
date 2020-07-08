@@ -73,6 +73,6 @@ app.post("/delete", async (req, res) => {
   res.status(200).send("Users deleted");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.POST, () => {
   console.log("Server start on port 3000");
 });
